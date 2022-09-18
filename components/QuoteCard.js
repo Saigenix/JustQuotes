@@ -2,14 +2,23 @@ import styles from './QuoteCard.module.css'
 import copy from '../public/copy.png'
 import downloads from '../public/downloads.png'
 import share from '../public/share.png'
+import place from '../public/place.gif'
 import Image from 'next/image'
+import { useState } from 'react'
+
 
 
 export default function QuoteCard({url,quote}) {
+    const [loaded,setLoaded] = useState(false)
     return (
         <main>
         <div className={styles.box}>
-            <img src={url} alt={quote} className='image' />
+        {!loaded ? (
+            <div className={styles.place}>
+            <Image src={place} alt="placeholder"  />  
+            </div>) : null}
+            <img src={url} alt={quote} className='image' style={!loaded ? { visibility: 'hidden' } 
+            : {}} onLoad={() => setLoaded(true)}  />
             <p className={styles.text}>{quote}</p>
             <div className={styles.iconBar}>
                 <button className={styles.button} onClick={() => navigator.clipboard.writeText(quote)}>

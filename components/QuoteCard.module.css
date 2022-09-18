@@ -43,3 +43,9 @@
  margin-top: 10px;
 
 }
+.place {
+    margin-left: 50px;
+    padding-left:10px ;
+    margin-top: 3px;
+    /* align-self: center; */
+}
