@@ -56,3 +56,51 @@
       padding: 13px 50px 13px;
     }
   }
+
+  .area{
+    font-family: inherit;
+    width: 100%;
+    
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px;
+    margin: 20px;
+    background: transparent;
+    transition: border-color 0.2s;
+    
+}
+.area:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, red,yellow);
+    border-image-slice: 1;
+  }
+  .customfileinput::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .customfileinput::before {
+    content: 'Select some files';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    color: #e3e3e3;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .customfileinput:hover::before {
+    border-color: black;
+  }
+  .customfileinput:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }

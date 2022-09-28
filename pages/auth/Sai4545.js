@@ -69,7 +69,7 @@ addDoc(dbRef, data)
   <option value="motivational">Motivational</option>
   <option value="love">Love</option>
   </select>
-    <input type="file" onChange={onImageChange} />
+    <input type="file" onChange={onImageChange} className={styles.customfileinput}/>
     <button  onClick={handleSubmit} className={styles.btn}>
             Submit
     </button>
