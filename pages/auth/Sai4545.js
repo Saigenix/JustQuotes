@@ -25,7 +25,8 @@ const onImageChange = (e) => {
 const uploadTask = uploadBytesResumable(storageRef, file,metadata);
 uploadTask.on("state_changed",
       (snapshot) => {
-        console.log("uploaded")
+        console.log("Wait till image on screen")
+          
       },
       (error) => {
         alert(error);
@@ -49,7 +50,9 @@ const handleSubmit = ()=>{
      };
 addDoc(dbRef, data)
 .then(docRef => {
-    console.log("Document has been added successfully");
+    alert("Document has been added successfully");
+    setText("")
+    setImgUrl(null)
 })
 .catch(error => {
     console.log(error);
