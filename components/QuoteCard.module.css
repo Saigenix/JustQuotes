@@ -30,13 +30,16 @@
     all: unset;
     height: 30px;
     width: 30px;
+    transition: 300ms;
     
 }
-
+.button:hover{
+    /* color: #8758FF; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* width: 40px; */
+}
 .icon{
     cursor: pointer;
-    
-    
 }
 .iconBar {
  display: flex;
