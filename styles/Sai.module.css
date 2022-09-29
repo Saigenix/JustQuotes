@@ -1,13 +1,13 @@
 .box{
     align-self: center;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px 0 0;
     margin-top: 10px;
-    width: 50%;
+    /* width: 50%; */
     /* background-color: aqua; */
 }
 
@@ -60,7 +60,7 @@
   .area{
     font-family: inherit;
     width: 100%;
-    
+    height: 150px;
     border: 0;
     border-bottom: 2px solid gray;
     outline: 0;
@@ -93,7 +93,7 @@
     white-space: nowrap;
     -webkit-user-select: none;
     color: #e3e3e3;
-    margin: 20px;
+    margin: 25px;
     cursor: pointer;
     font-weight: 700;
     font-size: 10pt;
@@ -103,4 +103,29 @@
   }
   .customfileinput:active::before {
     background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+  .select {
+    position: relative;
+    display: flex;
+    margin: 1em;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
   }

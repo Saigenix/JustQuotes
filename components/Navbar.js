@@ -29,9 +29,8 @@ const Navbar = () => {
   </div>
   
   <div className="nav-links">
-  <Link href="/auth" ><a >Login/sign-up</a></Link>
-    <Link href="/about" ><a>About us</a></Link>
-    <Link href="/contact" ><a>Contact us</a></Link>
+    <Link href="/catagory/motivational" ><a>Motivational</a></Link>
+    <Link href="/catagory/love" ><a>Love</a></Link>
     <Link href="/privacy" ><a>Privacy policy</a></Link>
     <Link href="/more" ><a>More Tools</a></Link>
   </div>

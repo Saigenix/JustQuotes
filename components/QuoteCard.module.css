@@ -11,7 +11,8 @@
     text-align: center;
     font-size: 2rem;
     text-decoration: solid;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Chokra Petch', sans-serif;
+    text-shadow: .1em .1em 0 rgb(100, 38, 176);
 }
 
 .box {
@@ -29,18 +30,21 @@
     all: unset;
     height: 30px;
     width: 30px;
+    
 }
 
 .icon{
     cursor: pointer;
+    
+    
 }
-
 .iconBar {
  display: flex;
  padding: 10px;
  align-items: center;
  justify-content: space-evenly;
  margin-top: 10px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
 .place {

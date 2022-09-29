@@ -44,6 +44,8 @@ a {
   display: inline;
   float: right;
   font-size: 18px;
+  font-weight: bold;
+  text-shadow: .1em .1em 0 rgb(232, 227, 239);
 }
 
 .nav > .nav-links > a {

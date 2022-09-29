@@ -62,8 +62,12 @@ addDoc(dbRef, data)
     <>
     {data?.auth == "true" ? <div className={styles.box}>
     
-    <input type="textarea" className={styles.area} placeholder="Quote" id='name' required value={Text} onChange={(e) => setText(e.target.value)}/>
-    <select value={catagory}
+    <textarea className={styles.area} 
+    rows={5}
+    coloum={5}
+    
+    placeholder="Quote" id='name' required value={Text} onChange={(e) => setText(e.target.value)}/>
+    <select value={catagory} className={styles.select}
     onChange={(e)=> setCatagory(e.target.value)}
     >
   <option value="motivational">Motivational</option>
