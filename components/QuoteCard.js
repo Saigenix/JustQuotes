@@ -2,7 +2,7 @@ import styles from "./QuoteCard.module.css";
 import copy from "../public/copy.png";
 import downloads from "../public/downloads.png";
 import share from "../public/share.png";
-import place from "../public/place.gif";
+import place from "../public/place.jpg";
 import Image from "next/image";
 import { useState } from "react";
 
