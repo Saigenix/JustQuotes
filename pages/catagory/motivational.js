@@ -7,9 +7,15 @@ import styles from "./Motivational.module.css"
 export default function Motivational() {
     const [data1, setdata] = useState([]);
     const [loding, setloading] = useState(true);
+    const [Last1,setLast1]= useState(null);
     const getdata = async () => {
-    const arr =  await GetData("motivational");
-    setdata(arr);
+    const [arr,last1] =  await GetData("motivational",Last1);
+    if(last1 == 'sai'){
+      // alert("DONE")
+      return;
+    } 
+    setLast1(last1);
+    setdata(prev => prev.concat(arr));
     setloading(false);
     };
 
@@ -17,16 +23,25 @@ export default function Motivational() {
  getdata();
  },[])
 
+ const loadmore = async () =>{
+  getdata();
+}
+
 
 return (
 <div>
-{ loding ? <Sppiner/> : <div className={styles.box}>
+{ loding ? <Sppiner/> : <><div className={styles.box}>
     { data1.map((d,key) => {
        return (
         <QuoteCard key={key} url={d.url} quote={d.quote}/>
        )
 
     })} </div>
+    <div className={styles.btnBox}>
+    <button className={styles.btn} onClick={loadmore}>
+    Load More
+    </button>
+    </div></>
 }
 </div>
   );
