@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 .img {
     height: auto;
     width: auto;
@@ -7,24 +6,32 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .text {
-    color: #F2F2F2;
+    color: #c539d2d7;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    opacity: 50%;
     text-decoration: solid;
-    font-family: 'Chokra Petch', sans-serif;
-    text-shadow: .1em .1em 0 rgb(100, 38, 176);
+    font-family: 'Kanit', sans-serif;
+    /* text-shadow: .1em .1em 0 rgb(100, 38, 176); */
 }
 
 .box {
     display: block;
-    background-color: #8758FF;
+    /* background-color: #8758FF; */
     padding: 10px;
     margin: 10px;
     box-sizing: border-box;
     max-width: 400px;
     max-height: 600px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    /* border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px; */
+   /* From https://css.glass */
+    background: rgba(100, 38, 176, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    border: 1px solid rgba(100, 38, 176, 0.43);
 }
 .button{
     all: unset;
@@ -47,7 +54,14 @@
  align-items: center;
  justify-content: space-evenly;
  margin-top: 10px;
- box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+ /* From https://css.glass */
+background: rgba(147, 176, 38, 0.14);
+border-radius: 6px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.2px);
+-webkit-backdrop-filter: blur(7.2px);
+border: 1px solid rgba(147, 176, 38, 0.36);
 
 }
 .place {

@@ -1,8 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar'
-import DefaultLayout from '../layouts/DefaultLayout'
 import Firestore from '../lib/Firestore'
 
 export default function Home() {

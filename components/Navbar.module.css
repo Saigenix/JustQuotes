@@ -1,0 +1,116 @@
+/* .Nav {
+    background-color: rgba(253, 253, 253, 0.941) ;
+  }
+  
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .Nav {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  } */
+
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+   /* From https://css.glass */
+background: rgba(240, 0, 255, 0.26);
+border-radius: 6px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.6px);
+-webkit-backdrop-filter: blur(4.6px);
+border: 1px solid rgba(240, 0, 255, 1);
+  }
+  
+  .nav > .nav_header {
+    display: inline;
+  }
+  
+  .nav > .nav_header > .nav_title {
+    display: inline-flex;
+    font-size: 23px;
+    color: rgb(169, 63, 176) ;
+    padding: 10px 10px 10px 10px;
+    /* margin-left: 20px; */
+  }
+ .title::before{
+    content: "";
+    margin-left: 10px;
+ }
+  .nav > .nav_btn {
+    display: none;
+  }
+  
+  .nav > .nav_links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d93ad6;
+    /* text-shadow: .1em .1em 0 rgb(232, 227, 239); */
+  }
+  
+  .nav > .nav_links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none ;
+    color: #d93ad6 ;
+  }
+  
+  .nav > .nav_links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+  }
+  
+  .nav > #nav_check {
+    display: none;
+  }
+  
+  @media (max-width: 780px) {
+    .nav > .nav_btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav_btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav_btn > label:hover,
+    .nav #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(201, 61, 159, 0.3);
+    }
+    .nav > .nav_btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid rgb(255, 255, 255);
+    }
+    .nav > .nav_links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgb(244, 237, 237);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav_links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav_check:not(:checked) ~ .nav_links {
+      height: 0px;
+    }
+    .nav > #nav_check:checked ~ .nav_links {
+      height: calc(100vh - 65vh);
+      overflow-y: auto;
+    }
+  }
+  
