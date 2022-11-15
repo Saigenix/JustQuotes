@@ -76,7 +76,7 @@
     padding-bottom: 6px;  
     font-weight: 700;
     border-width: 3px;
-    border-image: linear-gradient(to right, red,yellow);
+    border-image: linear-gradient(to left, red,yellow);
     border-image-slice: 1;
   }
   .customfileinput::-webkit-file-upload-button {

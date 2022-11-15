@@ -16,6 +16,7 @@ function Sai() {
     
 const onImageChange = (e) => {
       const [file] = e.target?.files;
+      console.log(file)
       const storage = getStorage(app);
       const storageRef = ref(storage, `${file.name}`);
       const metadata = {
