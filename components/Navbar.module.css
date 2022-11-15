@@ -92,14 +92,21 @@ border: 1px solid rgba(240, 0, 255, 1);
     }
     .nav > .nav_links {
       position: absolute;
+      z-index: 10;
       display: block;
       width: 100%;
-      background-color: rgb(244, 237, 237);
+      background-color: rgb(225, 197, 219);
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    border: 1px solid rgba(255, 255, 255, 0.43);
     }
     .nav > .nav_links > a {
       display: block;

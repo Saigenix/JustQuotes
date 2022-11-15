@@ -5,20 +5,24 @@ import share from "../public/share.png";
 import place from "../public/place.jpg";
 import Image from "next/image";
 import { useState } from "react";
+import toast,{Toaster} from 'react-hot-toast';
 
 export default function QuoteCard({ url, quote }) {
   const [loaded, setLoaded] = useState(false);
   return (
     <main>
+    <Toaster/>
       <div className={styles.box}>
         {!loaded ? (
           <div className={styles.place}>
             <Image src={place} alt="placeholder" />
           </div>
         ) : null}
-        <img
+        <Image
           src={url}
           alt={quote}
+          width={500}
+          height={500}
           className="image"
           style={!loaded ? { visibility: "hidden" } : {}}
           onLoad={() => setLoaded(true)}
@@ -27,7 +31,10 @@ export default function QuoteCard({ url, quote }) {
         <div className={styles.iconBar}>
           <button
             className={styles.button}
-            onClick={() => navigator.clipboard.writeText(quote)}
+            onClick={() => {
+              navigator.clipboard.writeText(quote)
+              toast.success('Successfully copied!');
+            }}
           >
             <Image src={copy} alt="copy" className={styles.icon} />
           </button>

@@ -31,25 +31,25 @@
     -webkit-user-select: none;
     touch-action: manipulation;
   }
-  .btnBon{
+  .btnBox{
     display: block;
   }
 
   .btn:after {
     content: "";
-    background-color: #ffe54c;
+    background-color: #872c6d;
     width: 100%;
     z-index: -1;
     position: absolute;
     height: 100%;
-    top: 7px;
-    left: 7px;
+    top: 0px;
+    left: 0px;
     transition: 0.2s;
   }
   
   .btn:hover:after {
-    top: 0px;
-    left: 0px;
+    top: 7px;
+    left: 7px;
   }
   
   @media (min-width: 768px) {

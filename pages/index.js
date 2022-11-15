@@ -2,8 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Firestore from '../lib/Firestore'
 
+
 export default function Home() {
   return (
+    <>
     <div className={styles.container}>
       <Head>
         <title>Just Quotes</title>
@@ -19,5 +21,6 @@ export default function Home() {
     <Firestore/>
     </div>
     </div>
+    </>
   )
 }

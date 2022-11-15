@@ -1,0 +1,8 @@
+.up{
+    z-index: 5; 
+    /* background-color: aqua;  */
+}
+
+.down{
+    z-index: -1;
+}
