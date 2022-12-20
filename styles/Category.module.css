@@ -1,23 +1,21 @@
 .box{
-    /* display: flex;
-    
-    
-    /* align-items: center; */
-    /* background-color: blue; */
-    /* justify-content: center; */
-    /* height: 100px;
-    width: inherit; */
     display: grid;
   padding: 20px;
-  /* flex-direction: row; */
+  
   grid-gap: 1em;
-  /* grid-template-columns: 1fr; */
   padding: 1em;
   color: rgb(255, 255, 255);
   font-size: medium;
   }
 
-
+/* .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 10px;
+    flex-flow: row wrap;
+} */
 @supports (display: grid) {
     .box {
       display: grid;
@@ -30,6 +28,7 @@
  
 .smallBox{
     margin: 20px;
+    /* align-self: center; */
 }
 
 .btn {
