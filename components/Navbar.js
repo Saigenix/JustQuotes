@@ -24,11 +24,13 @@ const Navbar = () => {
       <span></span>
       <span></span>
       <span></span>
+      <span></span>
     </label>
   </div>
   
   <div className={styles.nav_links}>
-    <Link href="/category" ><a>categories</a></Link>
+    <Link href="/category/Ai" ><a style={{color:"red" ,font:"extra-bold"}}>Ai</a></Link>
+    <Link href="/category" ><a>Categories</a></Link>
     <Link href="/privacy" ><a>Privacy policy</a></Link>
     <Link href="/more" ><a>More Tools</a></Link>
   </div>

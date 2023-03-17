@@ -1,4 +1,6 @@
-export const labels = ['business',
+export const labels = [
+'Ai',
+  'business',
   'change',
   'character',
   'competition',

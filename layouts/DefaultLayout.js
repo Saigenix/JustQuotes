@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 import styles from "./DefaultLayout.module.css"
-
+import Footer from "../components/Footer"
 export default function DefaultLayout ({children}) {
   return (
     <>
@@ -10,6 +10,7 @@ export default function DefaultLayout ({children}) {
     <main className={styles.down}>
         {children}
     </main>
+    <Footer/>
     </>
   )
 }
